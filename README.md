@@ -1,4 +1,3 @@
 #The modern frontend tooling stack and Sitecore
-I will try to give you a short introduction to some of the tools in the modern frontend development, this will be based on grunt. For this I will create a simple Sitecore MVC site, a shop website, I will be using LESS (link) and AngularJs. 
-I will be writing tests though I won’t go into details on the tests but I will look into Jasmine (Link) and Karma test runner (Link). And on the “same” page as with testing I will use some tools for static code analysis and linting to help us write better and more robust code.
-This will be the basics so I won’t go into details about how to integrate with you build system, this will be covered in another blog and I will not cover how to use Less, AngularJs and Bootstrap. If you need to learn more about these there are plenty resources out there.
+I will try to give you a short introduction to some of the tools in the modern frontend development, this will be based on grunt. For this I will create a simple Sitecore MVC site, a shop website, I will be using LESS and AngularJs. 
+
