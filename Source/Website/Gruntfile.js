@@ -1,4 +1,4 @@
-﻿/// <vs BeforeBuild='default' AfterBuild='test' />
+/// <vs BeforeBuild='default' AfterBuild='fasttest' />
 /*global module */
 'use strict';
 module.exports = function (grunt) {

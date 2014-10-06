@@ -1,3 +1,5 @@
+using Glass.Mapper.Sc;
+
 [assembly: WebActivator.PostApplicationStartMethod(typeof(Website.App_Start.SimpleInjectorInitializer), "Initialize")]
 
 namespace Website.App_Start
@@ -12,6 +14,7 @@ namespace Website.App_Start
     
     public static class SimpleInjectorInitializer
     {
+        public static Container Container { get; private set; }
         /// <summary>Initialize the container and register it as MVC3 Dependency Resolver.</summary>
         public static void Initialize()
         {
@@ -22,14 +25,15 @@ namespace Website.App_Start
 
             container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
             
-            container.Verify();
+           // container.Verify();
             
             DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
         }
      
         private static void InitializeContainer(Container container)
         {
-
+            container.Register<ISitecoreService>(() => new SitecoreService("master"));
+            container.Register<ISitecoreContext>(() => new SitecoreContext());
             // For instance:
             // container.Register<IUserRepository, SqlUserRepository>();
         }
