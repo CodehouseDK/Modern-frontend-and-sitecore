@@ -155,7 +155,6 @@
     <Content Include="Scripts\Vendor\angularJs\version.json" />
     <Content Include="Scripts\.jshintignore" />
     <Content Include="Scripts\.jshintrc" />
-    <Content Include="Scripts\Website\directives\productDirective.js" />
     <Content Include="Views\Layouts\_main.cshtml" />
     <Content Include="Content\bootstrap\alerts.less" />
     <Content Include="Content\bootstrap\badges.less" />
@@ -257,6 +256,7 @@
     <Content Include="Views\Layouts\Home.cshtml" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.config" />
+    <Content Include="Scripts\specs\services\templateService.spec.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1042,9 +1042,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\specs\directives\" />
-    <Folder Include="Scripts\specs\services\" />
     <Folder Include="Scripts\Website\configs\" />
     <Folder Include="Scripts\Website\controllers\" />
+    <Folder Include="Scripts\Website\directives\" />
     <Folder Include="Scripts\Website\services\" />
     <Folder Include="Scripts\Website\templates\" />
     <Folder Include="Views\Renderings\" />

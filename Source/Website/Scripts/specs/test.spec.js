@@ -1,4 +1,5 @@
-﻿describe('As a tester i need this to ', function () {
+﻿
+describe('As a tester i need this to ', function () {
     beforeEach(module('codehouse.demo'));
 
     it('pass', inject(function (version) {
